@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/masterslider.main.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="ms-partialview-template g-mt-50" id="partial-view-1">
+                <!-- masterslider -->
+                <div class="master-slider ms-skin-default ms-wk ms-layout-partialview" id="masterslider">
+                    <div class="ms-slide">
+                        <div class="ms-slide-bgcont">
+                            <img src="images/5.jpg" alt="lorem ipsum dolor sit" >
+                        </div>
+                    </div>
+                    <div class="ms-slide">
+                        <div class="ms-slide-bgcont">
+                            <img src="images/6.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                    <div class="ms-slide">
+                        <div class="ms-slide-bgcont">
+                            <img src="images/7.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                    <div class="ms-slide ms-sl-selected" >
+                        <div class="ms-slide-bgcont">
+                            <img src="images/1.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                    <div class="ms-slide">
+                        <div class="ms-slide-bgcont">
+                            <img src="images/2.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                    <div class="ms-slide">
+                        <div class="ms-slide-bgcont">
+                            <img src="images/3.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                    <div class="ms-slide">
+                        <div class="ms-slide-bgcont">
+                            <img src="images/4.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                    <div class="ms-slide ms-sl-selected" >
+                        <div class="ms-slide-bgcont">
+                            <img src="images/1.jpg" alt="lorem ipsum dolor sit">
+                        </div>
+                    </div>
+                </div>
+                <!-- end of masterslider -->
+            </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery-migrate.min.js"></script>
+            <script src="js/jquery.easing.min.js"></script>
+            <script src="js/tether.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/masterslider.min.js"></script>
+            <script>
+                var slider = new MasterSlider();
+
+                slider.control('arrows');
+                slider.control('slideinfo', {insertTo: "#partial-view-1", autohide: false, align: 'bottom', size: 160});
+                slider.control('circletimer', {color: "#e66e14", stroke: 9});
+                slider.setup('masterslider', {
+                    width: 760,
+                    height: 400,
+                    space: 10,
+                    loop: true,
+                    view: 'partialWave',
+                    layout: 'partialview'
+                });
+            </script>
+        </div>
+    </body>
+</html>
+
+
