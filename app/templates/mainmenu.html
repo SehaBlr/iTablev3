@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="static/img/logo_white_300x72.png" class="center-block img-responsive" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container mn-btn">
+            <div class="row">
+                <a href="buklet" class="col-lg-2 col-lg-offset-3">
+                    <div class="icon icon-031"></div>
+                    <p class="center-block">ПОЗНАКОМИТЬСЯ С КОМПАНИЕЙ</p>
+                </a>
+                <a href="buklet" class="col-lg-2">
+                    <div class="icon icon-032"></div>
+                    <p class="center-block">ПОЗНАКОМИТЬСЯ С КОМПАНИЕЙ</p>
+                </a>
+                <a href="buklet" class="col-lg-2 ">
+                    <div class="icon icon-064"></div>
+                    <p class="center-block">ПОЗНАКОМИТЬСЯ С КОМПАНИЕЙ</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <button class="back" data-toggle="modal" data-target=".example-modal-lg"><img src="static/img/wifi_knopka.png" width="200" height="128"/></button>
+    <div class="modal fade example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="LargeModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Ваши данные для доступа к Wi-Fi</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Логин : login1222  <br/> Пароль: password123123</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info btn-md" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+{% endblock %}
